@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodesTillTest2/CodesTillTest2.iml" filepath="$PROJECT_DIR$/CodesTillTest2/CodesTillTest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CodingNinja Solutions.iml" filepath="$PROJECT_DIR$/.idea/CodingNinja Solutions.iml" />
+    </modules>
+  </component>
+</project>
