@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #500db5, #12a8a8);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(60, 59, 59);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /*This add space between the inputbox and button */
+    background:linear-gradient(135deg, #4bde63df, #1ba4d2);
+    border-radius: 5px;
+    padding:5px;
+}
+input{
+    padding: 10px 5px 10px;
+    flex: 1; /* This will take the full width in the inoutbox*/
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#todo-icon{
+    width:25px;
+    height:25px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+#add-icon{
+
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+#list-container{
+    list-style: none;
+    font-size: 18px;
+    padding-top: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 8px 15px 45px;
+    font-size: 16px;
+    color: #52eaef;
+    position: relative;
+}
+ul li:hover{
+    background: linear-gradient(135deg, #157767b1, #841a9e9a);
+    margin-left: 1px;
+    border-radius: 10px;
+}
+
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 17px;
+
+}
+ul li.checked{
+    color: #8de7dd;
+    text-decoration: line-through;
+    
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+
+}
+
+ul li span{
+    position: absolute;
+    right: 5px;
+    top:15px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+
+
+}
+ul li span:hover{
+    color: rgb(231, 109, 242);
+    font-size: 27px;
+    
+    
+}
