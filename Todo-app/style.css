@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; /* This is to to include the padding and border in an element's total width and height  */
 }
 
 .container{
@@ -11,6 +11,8 @@
     background: linear-gradient(135deg, #500db5, #12a8a8);
     padding: 10px;
 }
+
+
 
 .todo-app{
     width: 100%;
@@ -38,6 +40,7 @@ input{
     margin-left: 5px;
     font-size: 20px;
 }
+
 
 #todo-icon{
     width:25px;
@@ -76,13 +79,16 @@ ul li{
     color: #52eaef;
     position: relative;
 }
+
+/* When a user hovers over the list items that is the todo lists  */
+
 ul li:hover{
     background: linear-gradient(135deg, #157767b1, #841a9e9a);
     margin-left: 1px;
     border-radius: 10px;
 }
 
-
+/* This is to add the unchecked box before each list items  */
 ul li::before{
     content: '';
     position: absolute;
@@ -95,16 +101,19 @@ ul li::before{
     top: 17px;
 
 }
+/* When a user clicks on the checkbox the colour changes and a line through the list appears */
 ul li.checked{
     color: #8de7dd;
     text-decoration: line-through;
     
 }
+/* This is to add the checked box before each list items  */
 ul li.checked::before{
     background-image: url(images/checked.png);
 
 }
 
+/* This is to style the cross icon next to each list items which is used to remove a list */
 ul li span{
     position: absolute;
     right: 5px;

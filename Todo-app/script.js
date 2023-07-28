@@ -1,9 +1,11 @@
-const inputBox = document.getElementById("input-box");
+// Created variables to access the input  and list container html element by id
+const inputBox = document.getElementById("input-box"); 
 const listContainer = document.getElementById("list-container")
 
 
 
 
+// The function addTask() is to add or append each todo list in the list container after a user enters value and click on add button
 
 function addTask(){
     if(inputBox.value === ''){
@@ -22,7 +24,7 @@ function addTask(){
 }
 
 
-
+// This is to toggle the check box (Checked - Unchecked)
 
 listContainer.addEventListener("click", function(e){
 
@@ -41,12 +43,13 @@ listContainer.addEventListener("click", function(e){
 },false);
 
 
-
+// This is to save the data in the browser that the users wants to add n the todo list
+// That is even after refreshing the list items remains same
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
-
+// This is to show the data that is saved using the function saveData()
 function showSavedTask(){
     listContainer.innerHTML=localStorage.getItem("data");
 }
